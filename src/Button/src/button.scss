@@ -1,0 +1,33 @@
+$success-color: green;
+$default-color: darkgray;
+
+.btn {
+    background-color: $default-color;
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+    padding: 12px 24px;
+    transition: background-color .2s ease-in-out;
+
+    &:hover {
+        background-color: darken($default-color, 10%);
+    }
+
+    &-rounded {
+        border-radius: 25px;
+    }
+
+    &-success {
+        background-color: $success-color;
+    
+        &:hover {
+            background-color: darken($success-color, 10%);
+        }
+    }
+
+
+}
+
+
+
