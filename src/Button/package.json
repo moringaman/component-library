@@ -1,0 +1,20 @@
+{
+    "name": "@webnostix/button",
+    "description": "Button component",
+    "version": "1.0.1",
+    "license": "MIT",
+    "author": "Rob Duffus",
+    "main": "dist/index.js",
+    "publishConfig": {
+        "access": "public"
+    },
+    "scripts": {
+        "build": "cross-env webpack -p --config ../../webpack.config.js",
+        "clean": "rimraf dist && rimraf node_modules && rimraf package-lock.json",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "peerDependencies": {
+        "react": "^16.8.2",
+        "react-dom": "^16.8.2"
+    }
+}
